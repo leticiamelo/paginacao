@@ -45,6 +45,8 @@
         </table>
       </div>
       <div class="card-footer">
+
+      <!--funcão link retornada pelo objeto clientes. Essa função inclui as paginas na view-->
         {{ $clientes->links() }} 
       </div>
     </div>

@@ -14,7 +14,7 @@ class ClienteControlador extends Controller
      */
     public function index()
     {
-        //$clientes = Cliente::all();
+        //paginate realiza a paginaçao com o numero de registros indicados;
         $clientes = Cliente::paginate(15);
         return view('index', compact(['clientes']));
     }
